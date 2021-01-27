@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+
+/* variables for colors */
+:root {
+    --bgDark: #333;
+    --bgDark1:#444;
+    --bgLight: #555;
+    --lightColor: #ffffff;
+    --markColor: salmon;
+  }
+
+/* Reset styling */
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.clr {
+    clear:both;
+}
+
+/* utility classes */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 20px;
+    overflow: auto;
+}
+
+.text-marked {
+    color: var(--markColor);
+}
+
+.lead-styling {
+    font-size: 24px;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 24px;
+    color: var(--lightColor);
+    background:var(--bgDark);
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: var(--markColor);
+    background: rgb(85, 29, 29);
+}
+
+.btn-light {
+    color: var(--bgDark);
+    background:var(--markColor);
+}
+
+.bg-dark {
+    color:var(--lightColor);
+    background:var(--bgDark);
+}
+
+.bg-light {
+    color:var(--bgDark);
+    background: var(--lightColor);
+}
+
+.bg-marked {
+    color:var(--bgDark);
+    background:var(--markColor);
+}
+
+.lg-heading {
+    font-size: 40px;
+}
+/* padding utility classes */
+.py-1 { padding: 10px 0; }
+.py-2 { padding: 20px 0; }
+.py-3 { padding: 30px 0; }
+
+/* Core elements styling */
+html,body{
+    font-family: 'Open Sans Condensed', sans-serif;
+    /* font-size: 18px; */
+    line-height: 2em;
+}
+
+a {
+    text-decoration: none;
+    color:var(--bgDark);
+}
+
+h1, h2, h3 {
+    padding-bottom: 20px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+#navbar {
+    background-color:var(--bgDark);
+    color:var(--lightColor);
+    overflow:auto;
+}
+
+#navbar a {
+    color:var(--lightColor);
+    font-size: 22px;
+}
+
+#navbar h1 {
+    float: left;
+    padding: 20px;
+}
+
+#navbar ul {
+    float: right;
+    list-style: none;
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current
+{
+    background-color: var(--bgLight);
+    color:var(--markColor);
+}
+
+#showcase {
+    /* background-image: url('../img/jasmin-schuler-PUTVh0Z_qNQ-unsplash.jpg') no-repeat center center/cover; */
+    background: url('../img/jasmin-schuler-PUTVh0Z_qNQ-unsplash.jpg') no-repeat center center/cover;
+    height: 600px;
+}
+
+#showcase .showcase-content{
+    text-align: center;
+    color: var(--lightColor);
+    padding: 50px;
+}
+
+#showcase .showcase-content h1 {
+    font-size: 60px;
+    line-height: 1.1em;
+}
+
+#showcase .showcase-content p {
+    padding-bottom: 40px;
+    line-height: 1.5em;
+}
+
+/* Home info */
+#info {
+    height: 400px;
+}
+
+#info .info-img {
+    float: left;
+    width: 50%;
+    height: 100%;
+    background: url('../img/alex-nicolopoulos-hxn2HjZHyQE-unsplash.jpg') no-repeat center center/cover;
+}
+
+#info .info-content {
+    float:right;
+    width: 50%;
+    min-height: 100%;
+    text-align: center;
+    padding: 30px 20px;
+    overflow:hidden;
+}
+
+#info .info-content p {
+    padding-bottom: 5px;
+}
+
+/* features */
+.box {
+    float:left;
+    width:33.3%;
+    text-align: center;
+    padding: 50px;
+}
+
+.box i {
+    margin-bottom: 10px;
+}
+
+/* about styling */
+#about-info .info-right {
+    float: right;
+    width: 50%;
+    min-height: 100%;
+}
+
+#about-info .info-right img {
+    display: block;
+    margin: auto;
+    width:80%;
+}
+
+#about-info .info-left {
+    float: left;
+    width: 50%;
+    min-height: 100%;
+}
+
+#articles {
+    height: 600px;
+    background: url('/img/cat-landing-hero-lg.jpg') no-repeat right center/cover;
+    color:var(--lightColor);
+    /* padding: 20px 0; */
+    padding-top: 100px;
+}
+
+#articles .article img {
+    width: 100px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+#articles h2 {
+    color:var(--lightColor);
+    text-align: center;
+    padding-bottom: 10px ;
+}
+
+#articles .article h3 {
+    padding-bottom: 0;
+}
+
+#articles .article p {
+    margin: 0;
+}
+
+#articles .article {
+    padding: 40px;
+    margin-top: 20px;
+    border-radius: 5px;
+    opacity: 0.9;
+}
+
+/* contact form styling */
+#contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+#contact-form label {
+    display:block;
+    margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--bgDark1);
+}
+
+#contact-form textarea {
+    height: 200px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+   border: 1px solid var(--markColor);
+   outline: none; 
+} 
+/* footer styling */
+#main-footer {
+    background: var(--bgDark1);
+    color:var(--lightColor);
+    text-align: center;
+    padding: 20px;
+}
